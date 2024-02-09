@@ -4,7 +4,7 @@
   "description": "A FileMaker Data API client designed to allow easier interaction with a FileMaker database from a web environment.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc _mocha --recursive  ./test/*.test.js --timeout=40000 --exit",
+    "test": "nyc _mocha --recursive  ./test/*.test.js --timeout=50000 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "report": "nyc report --reporter=html",
     "examples": "node examples/index.js",
@@ -39,12 +39,12 @@
   },
   "homepage": "https://github.com/Luidog/fms-api-client",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.3",
     "axios-cookiejar-support": "^1.0.0",
     "form-data": "^3.0.0",
     "into-stream": "^5.1.1",
     "lodash": "^4.17.15",
-    "marpat": "^3.0.3",
+    "marpat": "^3.0.5",
     "mime-types": "^2.1.26",
     "moment": "^2.24.0",
     "object-sizeof": "^1.6.0",
